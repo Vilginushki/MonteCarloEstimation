@@ -11,13 +11,11 @@ public class Main {
         for (int i = 0; i < points; i++) {
             double cordX = (Math.random() - 0.5) * 2 * radius;//Generate random coordinates for point
             double cordY = (Math.random() - 0.5) * 2 * radius;
-
             if ((Math.pow(cordX, 2) + Math.pow(cordY, 2)) <= radius * radius) {//check if point is in circle
                 inCircle++;
             }
         }
         return (4 * ((double) inCircle / points));//return pi estimation
-
     }
 
     public static void main(String[] args) {
